@@ -11,14 +11,17 @@ const Home = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
+      {/* Profile Image */}
       <motion.img
-        src="/public/riyaz.png"
+        src="/riyaz.png" // public folder থেকে সরাসরি
         alt="Profile"
         className="rounded-full w-60 h-60 mb-6 border-4 border-blue-400"
         initial={{ scale: 0.5, opacity: 0 }}
         animate={{ scale: [1.2, 1, 1.1, 1], opacity: 1 }}
         transition={{ duration: 1.2, ease: "easeInOut" }}
       />
+
+      {/* Name */}
       <motion.h1
         className="text-5xl font-bold mb-4"
         initial={{ opacity: 0 }}
@@ -27,6 +30,8 @@ const Home = () => {
       >
         MD RIYAZ AKONDO
       </motion.h1>
+
+      {/* Typewriter Text */}
       <motion.p
         className="text-xl text-gray-400 max-w-xl"
         initial={{ opacity: 0 }}
