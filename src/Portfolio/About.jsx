@@ -36,7 +36,7 @@ const About = () => {
         transition={{ duration: 0.8, delay: 0.3 }}
       >
         <img
-          src="/public/1746021230584.jpg" // <-- Put your GIF in public/assets/images/
+          src="/1746021230584.jpg" // <-- Put your GIF in public/assets/images/
           alt="MD RIYAZ AKONDO"
           className="rounded-xl shadow-lg w-full h-120"
         />
