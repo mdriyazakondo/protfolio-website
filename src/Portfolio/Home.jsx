@@ -12,7 +12,7 @@ const Home = () => {
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <motion.img
-        src="../../public/riyaz.png"
+        src="/public/riyaz.png"
         alt="Profile"
         className="rounded-full w-60 h-60 mb-6 border-4 border-blue-400"
         initial={{ scale: 0.5, opacity: 0 }}
