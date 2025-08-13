@@ -13,7 +13,7 @@ const Home = () => {
     >
       {/* Profile Image */}
       <motion.img
-        src="/riyaz.png" // public folder থেকে সরাসরি
+        src="/riyaz.png"
         alt="Profile"
         className="rounded-full w-60 h-60 mb-6 border-4 border-blue-400"
         initial={{ scale: 0.5, opacity: 0 }}
@@ -33,7 +33,7 @@ const Home = () => {
 
       {/* Typewriter Text */}
       <motion.p
-        className="text-xl text-gray-400 max-w-xl"
+        className="text-xl text-gray-400 max-w-xl mb-6"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.7 }}
@@ -45,6 +45,7 @@ const Home = () => {
               "Junior Web Developer",
               "Frontend Developer",
               "React.js Developer",
+              "MARN Stack Developer",
             ]}
             loop={0} // 0 means infinite loop
             cursor
@@ -55,6 +56,31 @@ const Home = () => {
           />
         </span>
       </motion.p>
+
+      {/* Buttons */}
+      <motion.div
+        className="flex gap-4 mt-4"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 1 }}
+      >
+        {/* CV Download */}
+        <a
+          href="/CV_Riyaz.pdf" // public ফোল্ডারে তোমার CV ফাইল রাখতে হবে
+          download
+          className="px-6 py-3 bg-blue-400 text-white rounded-lg font-medium hover:bg-blue-500 transition"
+        >
+          Download CV
+        </a>
+
+        {/* Contact / Views */}
+        <a
+          href="#contact" // Contact section এর id ধরে রেখেছো ধরে নিলাম
+          className="px-6 py-3 border-2 border-blue-400 text-blue-400 rounded-lg font-medium hover:bg-blue-400 hover:text-white transition"
+        >
+          Contact Me
+        </a>
+      </motion.div>
     </motion.section>
   );
 };

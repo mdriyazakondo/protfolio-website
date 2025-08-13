@@ -72,7 +72,7 @@ const Contact = () => {
         />
         <button
           type="submit"
-          className="bg-cyan-500 hover:bg-cyan-600 p-5 rounded text-white font-semibold shadow-md text-lg"
+          className="bg-cyan-500 hover:bg-cyan-600 p-5 rounded text-white font-semibold shadow-md text-lg cursor-pointer"
         >
           Send
         </button>
@@ -83,8 +83,11 @@ const Contact = () => {
           Connect with me
         </h3>
         <div className="flex flex-wrap justify-center gap-6 text-gray-200 text-lg">
+          {/* Gmail link updated to open Gmail compose directly */}
           <a
-            href="mailto:mdriyazakondo265@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=mdriyazakondo265@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center space-x-2 hover:text-cyan-400"
           >
             <FaEnvelope /> <span>Gmail</span>

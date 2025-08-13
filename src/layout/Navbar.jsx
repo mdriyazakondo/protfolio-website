@@ -36,7 +36,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full bg-gray-900 shadow z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
         <div className="text-2xl font-bold cursor-default text-blue-400">
-          MyPortfolio
+          Portfolio.
         </div>
 
         <button
